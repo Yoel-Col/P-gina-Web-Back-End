@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AGREGAR PELICULA</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <h1>AGREGAR PELICULA</h1>
+    <form id="addMovieForm">
+        <label for="titulo">Titulo:</label>
+        <input type="text" id="titulo" name="titulo" required><br><br>
+        <label for="descripcion">Descripcion:</label>
+        <input type="text" id="descripcion" name="descripcion" required><br><br>
+        <label for="anio">Anio:</label>
+        <input type="number" id="anio" name="anio" required><br><br>
+        <label for="valoracion">Valoracion:</label>
+        <input type="number" id="valoracion" name="valoracion" step="0.1" required><br><br>
+        <label for="imagen_url">Image URL:</label>
+        <input type="url" id="imagen_url" name="imagen_url" required><br><br>
+        <label for="categoria_id">Categoria ID:</label>
+        <input type="number" id="categoria_id" name="categoria_id" required><br><br>
+        <button type="submit">Agregar Pelicula</button>
+    </form>
+
+    <script src="../js/addMovie.js"></script>
+</body>
+</html>
