@@ -21,8 +21,8 @@ app.get('/login', (req, res) => {res.sendFile(path.join(__dirname,'public','page
 app.get('/registrar', (req, res) => {res.sendFile(path.join(__dirname,'public','pages','registrarse.html'));});
 app.get('/addMovie', (req, res) => {res.sendFile(path.join(__dirname,'public','pages','user.html'));});
 
-const PORT = process.env.ALWAYSDATA_HTTPD_PORT || 3000;
-const IP = process.env.ALWAYSDATA_HTTPD_IP || '127.0.0.1';
+const PORT = process.env.ALWAYSDATA_HTTPD_PORT || 8100;
+const IP = process.env.ALWAYSDATA_HTTPD_IP || '::';
 
 app.listen(PORT, IP, () => {
   console.log(`Server running at http://${IP}:${PORT}/`);
