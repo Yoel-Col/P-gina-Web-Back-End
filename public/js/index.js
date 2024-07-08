@@ -1,5 +1,5 @@
 
-const urlBBDD = 'http://peliculas.alwaysdata.net/api/peliculas'
+const urlBBDD = 'https://peliculas.alwaysdata.net/api/peliculas'
 const urlBBDD_vista = urlBBDD + "vista";
 const urlBBDD_like = urlBBDD + "like";
 //con json de /api/peliculas -> la parseamos y la utilizamos a nuestro conveniencia
