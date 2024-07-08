@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+    <a href="./">Inicio</a>
+    <h1>Bienvenido, <span id="titulo"></span></h1>
+    <button class="boton" id="editar">editar</button>
+    <button class="boton" id="borrar">borrar cuenta</button>
+    <button class="boton" id="cerrar-sesion">cerrar sesion</button>
+    <a id="cerrar" class="oculto">cerrar sesion</a>
+    <form id="editar-datos" class="oculto">
+        <label>Nombre: <input type="text" id="nombre"></label>
+        <label>Password: <input type="password" id="password"></label>
+        <input type="submit" value="modificar"> 
+        <input type="reset" value="cancelar" id="cancelar"> 
+    </form>
+    <h2>Peliculas que te gustaron:</h2>
+    <div id="peliculas-container-like"></div>
+    <h2>Peliculas vistas:</h2>
+    <div id="peliculas-container"></div>
+    
+
+
+    <script src="../js/perfil.js"></script>
+    
+</body>
+</html>
