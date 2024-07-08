@@ -1,5 +1,5 @@
 const url = "https://6663bb10932baf9032a8e0bd.mockapi.io";
-const urlBBDD = 'http://peliculas.alwaysdata.net/api/peliculas';
+const urlBBDD = 'https://peliculas.alwaysdata.net/api/peliculas';
 
 const formulario = document.getElementById("register-form");
 formulario.addEventListener("submit", agregar);
