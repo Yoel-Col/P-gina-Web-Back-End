@@ -1,0 +1,25 @@
+TE PASO LOS DDL 
+CREATE TABLE `mirapelicula` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `usuario_id` int DEFAULT NULL,
+  `pelicula_id` int DEFAULT NULL,
+  `fecha` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `usuario_id` (`usuario_id`),
+  KEY `pelicula_id` (`pelicula_id`),
+  CONSTRAINT `mirapelicula_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`),
+  CONSTRAINT `mirapelicula_ibfk_2` FOREIGN KEY (`pelicula_id`) REFERENCES `peliculas` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `likepelicula` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `usuario_id` int DEFAULT NULL,
+  `pelicula_id` int DEFAULT NULL,
+  `fecha` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `usuario_id` (`usuario_id`),
+  KEY `pelicula_id` (`pelicula_id`),
+  CONSTRAINT `likepelicula_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`),
+  CONSTRAINT `likepelicula_ibfk_2` FOREIGN KEY (`pelicula_id`) REFERENCES `peliculas` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
