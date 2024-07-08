@@ -1,4 +1,4 @@
-const urlBBDD = 'http://peliculas.alwaysdata.net/api/peliculas'
+const urlBBDD = 'https://peliculas.alwaysdata.net/api/peliculas'
 
 const my_storage = window.localStorage;
 console.log(my_storage.getItem('password'));
