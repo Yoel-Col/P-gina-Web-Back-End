@@ -1,4 +1,4 @@
-const urlBDD = "http://localhost:3000/api";
+const urlBDD = 'http://peliculas.alwaysdata.net/api/peliculas';
 const urlBBDD_usuarios = urlBDD+"/usuarios";
 const urlBBDD_vista = urlBDD+"/vista";
 const urlBBDD_like = urlBDD+"/like";

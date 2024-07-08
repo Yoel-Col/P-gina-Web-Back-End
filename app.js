@@ -21,15 +21,15 @@ app.use('/api', likeRoutes);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-//files estaticos (hay que cambiarlo pero cumple funcionalidad)
+//files estaticos (hay que modificar su estructura pero cumple funcionalidad)
 app.get('/', (req, res) => {res.sendFile(path.join(__dirname,'index.html'));});
 app.get('/login', (req, res) => {res.sendFile(path.join(__dirname,'public','pages','login.html'));});
 app.get('/perfil', (req, res) => {res.sendFile(path.join(__dirname,'public','pages','perfil.html'));});
 app.get('/registrarse', (req, res) => {res.sendFile(path.join(__dirname,'public','pages','registrarse.html'));});
 app.get('/addMovie', (req, res) => {res.sendFile(path.join(__dirname,'public','pages','user.html'));});
 
-const PORT = /*process.env.ALWAYSDATA_HTTPD_PORT ||*/ 3000;
-const IP = /*process.env.ALWAYSDATA_HTTPD_IP ||*/ '127.0.0.1';
+const PORT = process.env.ALWAYSDATA_HTTPD_PORT || 8100;
+const IP = process.env.ALWAYSDATA_HTTPD_IP || '::';
 
 app.listen(PORT, IP, () => {
   console.log(`Server running at http://${IP}:${PORT}/`);
